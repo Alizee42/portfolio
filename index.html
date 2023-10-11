@@ -14,6 +14,8 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    
+
     <title>Responsive Portfolio Website</title>
 </head>
 
@@ -694,75 +696,77 @@
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+      
+    
+    <section class="contact section" id="contact">
 
-            <h2 class="section__title">Contactez-moi</h2>
-            <span class="section__subtitle">Entrez en contact</span>
+    <h2 class="section__title">Contactez-moi</h2>
+    <span class="section__subtitle">Entrez en contact</span>
 
-            <div class="contact__container container grid">
+    <div class="contact__container container grid">
+        <div>
+            <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+
                 <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Appelez-moi</h3>
-                            <span class="contact__subtitle">0612549047</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">alizee.gueye@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Localisation</h3>
-                            <span class="contact__subtitle">France - 29b rue du professeur roux 42800 RIVE DE
-                                GIER</span>
-                        </div>
-                    </div>
+                    <h3 class="contact__title">Appelez-moi</h3>
+                    <span class="contact__subtitle">0612549047</span>
                 </div>
-
-                <from class="contact__from grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Nom</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Projet</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__imput"></textarea>
-                    </div>
-                    <a href="#" class="button button--flex">
-                        Envoyez message
-                        <i class="uil uil-message button__icon"></i>
-                    </a>
-                    <div>
-
-                    </div>
-
-                </from>
             </div>
-        </section>
-    </main>
 
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__subtitle">alizee.gueye@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Localisation</h3>
+                    <span class="contact__subtitle">France - 29b rue du professeur roux 42800 RIVE DE
+                        GIER</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact__from grid" action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                <input type="hidden" name="accessKey" value="a2034b9b-8c54-49b0-8eae-9ae6ab145128">
+                  <input type="hidden" name="subject" value="Portfolio">
+                
+                    <label for="" class="contact__label">Nom</label>                    
+                    <input class="contact__input" type="text" name="name" placeholder="Enter Votre Nom" required>
+                   </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Email</label>                    
+                      <input class="contact__input" type="email" name="email" placeholder="Enter Votre Email" required>
+                </div>
+            </div>
+            
+            <input type="text" name="honeypot" style="display:none">
+            <div class="contact__content">
+                <label for="" class="contact__label">Projet</label>
+                    <input type="text" name="$project" class="contact__input" placeholder="Enter Votre projet">
+            </div>
+            <div class="contact__content">
+                <label class="label">Message</label>                    
+                <textarea class="contact__imput" name="message"  id="" cols="0" rows="7" placeholder="Enter Votre Message" required></textarea>
+            </div>
+            <input type="hidden" name="redirectTo" value="../success.html"> 
+            <button class="button is-primary" type="Submit">Envoyez message <i class="uil uil-message button__icon"></i></button>         
+            <div>
+            </div>
+            
+        </form>
+    </div>
+</section>
+</main>
     <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="footer__bg">
@@ -811,6 +815,7 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    
 </body>
 
 </html>

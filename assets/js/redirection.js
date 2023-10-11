@@ -1,3 +1,4 @@
 function redirection (){
-    window.location = "success.html"
+    window.location = "index.html"
 }
+

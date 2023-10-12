@@ -86,12 +86,14 @@ body.dark-theme{
 .nav__btns{
   display:flex;
   align-items:center;
+  margin-top: -5px;
 }
 .change-theme{
   font-size: 1.25rem;
   color:var(--title-color);
   margin-right:var(--mb-1);
   cursor:pointer;
+  
 }
 .change-theme:hover{
   color:var(--first-color);
@@ -252,6 +254,7 @@ img {
 /* Active link */
 .active-link{
   color:var(--first-color);
+  margin-top: -20px;
 }
 
 /* Change background header */

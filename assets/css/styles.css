@@ -377,14 +377,16 @@ img {
   border-radius: .5rem;
   justify-self:center;
   align-self:center;
+  margin-bottom: 100px;
 }
 .about__description{
   text-align:center;
-  margin-bottom:var(--mb-2-5);
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 .about__info{
   display:flex;
-  justify-content:space-evenly;
+  justify-content:center;
   margin-bottom:var(--mb-2-5);
 }
 
@@ -405,6 +407,7 @@ img {
 .about__buttons{
   display:flex;
   justify-content:center;
+  margin-left: 60px;
 }
 /*==================== SKILLS ====================*/
 .skills__container{

@@ -745,7 +745,19 @@ img {
   border-radius: .5rem;
   padding: .75rem 1rem .25rem;
 }
+.contact__content label {
+  position:absolute;
+}
 
+.contact__content textarea::placeholder {
+  position:absolute;
+  bottom:0;
+}
+
+.contact__content input::placeholder {
+  position:absolute;
+  bottom:0;
+}
 .contact__label{
   font-size:var(--smaller-font-size);
   color:var(--title-color);
